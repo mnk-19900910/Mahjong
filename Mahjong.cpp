@@ -37,6 +37,18 @@ int setLike_func() {
     return like;
 }
 
+// 雀士のインスタンスを作成し、ボイスを表示する関数の実装
+void getVoice_func(int like) {
+    // 雀士のインスタンスを作成し、ボイスを表示する
+    if (like == 1) {
+        MFC mf ("高宮まり");
+        sub(&mf);
+    } else {
+        Sakura sa ("岡田紗佳");
+        sub(&sa);
+    }
+}
+
 // コンストラクタの実装
 Mahjong::Mahjong(int number, string result) {
     this->number = number;

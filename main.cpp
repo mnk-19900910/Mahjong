@@ -20,14 +20,7 @@ int main() {
     cout << "翻数は" << act.getNumber() << endl;
     cout << "結果は" << act.getResult() << endl;
 
-    // 雀士のインスタンスを作成し、ボイスを表示する
-    if (like == 1) {
-        MFC mf ("高宮まり");
-        sub(&mf);
-    } else {
-        Sakura sa ("岡田紗佳");
-        sub(&sa);
-    }
+    getVoice_func(like);	// 雀士のインスタンスを作成し、ボイスを表示する関数
 
     return 0;
 }
