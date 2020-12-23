@@ -5,7 +5,7 @@ using namespace std;
 
 // 翻数を設定する関数の実装
 int setNumber_func() {
-    int number;
+    int number;	// 翻数を表す変数
     cout << "翻数は?" << endl;
     cin >> number;
     return number;
@@ -13,7 +13,7 @@ int setNumber_func() {
 
 // 満貫、跳満等の結果を設定する関数の実装
 string setResult_func(int number) {
-    string result;
+    string result;	// 満貫、跳満等の結果を表す変数
     if (number >= 13) {
         return result="数え役満";
     } else if (number >= 11) {
@@ -27,6 +27,14 @@ string setResult_func(int number) {
     } else {
         return result="---";
     }
+}
+
+// 好きな雀士を設定する関数の実装
+int setLike_func() {
+    int like;	// 好きな雀士を表す変数
+    cout << "好きなのは? 1：高宮まり 2:岡田紗佳" << endl;
+    cin >> like;
+    return like;
 }
 
 // コンストラクタの実装

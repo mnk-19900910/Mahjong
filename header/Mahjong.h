@@ -16,6 +16,9 @@ int setNumber_func();
 // 満貫、跳満等の結果を設定する関数のプロトタイプ宣言
 string setResult_func(int number);
 
+// 好きな雀士を設定する関数のプロトタイプ宣言
+int setLike_func();
+
 // 雀士を表すSparrowクラスの定義
 class Sparrow {
     protected:

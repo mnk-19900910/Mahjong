@@ -11,8 +11,7 @@ int main() {
     result = setResult_func(number);	// 満貫、跳満等の結果を設定する関数
 
     int like;	// 好きな雀士を表す変数
-    cout << "好きなのは? 1：高宮まり 2:岡田紗佳" << endl;
-    cin >> like;
+    like = setLike_func();	// 好きな雀士を設定する関数
 
     // 新たな翻数と結果を表示するインスタンスを設定する
     Mahjong act (number, result);
