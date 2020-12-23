@@ -1,3 +1,4 @@
+// 翻数と結果を表すMahjongクラスの定義
 class Mahjong {
     protected:
         int number;	// 翻数を表すメンバ変数
@@ -9,9 +10,10 @@ class Mahjong {
         Mahjong(int number, string result); // コンストラクタ
 };
 
-string setResult_func(int number);// 満貫、跳満等の結果を設定するメンバ関数の実装
+// 満貫、跳満等の結果を設定するメンバ関数のプロトタイプ宣言
+string setResult_func(int number);
 
-// 雀士を表すクラスの定義
+// 雀士を表すSparrowクラスの定義
 class Sparrow {
     protected:
         string name;	// 雀士の名前を表すメンバ変数
@@ -20,18 +22,19 @@ class Sparrow {
         Sparrow(string name); // コンストラクタ
 };
 
-// 麻雀格闘倶楽部を表すクラスの定義
+// 麻雀格闘倶楽部を表すMFCクラスの定義
 class MFC : public Sparrow {
     public:
         void voice();   // 雀士の名前とボイスを表示するメンバ関数
         MFC(string name); // コンストラクタ
 };
 
-// サクラナイツを表すクラスの定義
+// サクラナイツを表すSakuraクラスの定義
 class Sakura : public Sparrow {
     public:
         void voice();   // 雀士の名前とボイスを表示するメンバ関数
         Sakura(string name); // コンストラクタ
 };
 
+// Sparrowクラスのポインタを引数としたsub関数のプロトタイプ宣言
 void sub(Sparrow *p);
