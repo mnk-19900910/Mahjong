@@ -14,10 +14,10 @@ string Mahjong::getResult() {
 }
 
 // 満貫、跳満等の結果を設定するメンバ関数の実装
-string setResult_func(int number){
+string setResult_func(int number) {
     string result;
     if (number >= 13) {
-        return result="役満";
+        return result="数え役満";
     } else if (number >= 11) {
         return result="三倍満";
     } else if (number >= 8) {
