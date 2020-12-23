@@ -45,5 +45,5 @@ class Sakura : public Sparrow {
         Sakura(string name); // コンストラクタ
 };
 
-// Sparrowクラスのポインタを引数としたsub関数のプロトタイプ宣言
-void sub(Sparrow *p);
+// Sparrowクラスのポインタを引数とした関数のプロトタイプ宣言
+void sparrowVoice(Sparrow *p);

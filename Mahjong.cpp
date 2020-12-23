@@ -42,11 +42,16 @@ void getVoice_func(int like) {
     // 雀士のインスタンスを作成し、ボイスを表示する
     if (like == 1) {
         MFC mf ("高宮まり");
-        sub(&mf);
+        sparrowVoice(&mf);
     } else {
         Sakura sa ("岡田紗佳");
-        sub(&sa);
+        sparrowVoice(&sa);
     }
+}
+
+// Sparrowクラスのポインタを引数とした関数の実装
+void sparrowVoice(Sparrow *p) {
+    p->voice();
 }
 
 // コンストラクタの実装
@@ -86,9 +91,4 @@ Sakura::Sakura(string name) : Sparrow(name) {
 // サクラナイツを表す名前と鳴き声を表示するメンバ関数の実装
 void Sakura::voice() {
     cout << "サクラナイツの" << this->name << "です。 やったね" << endl;
-}
-
-// Sparrowクラスのポインタを引数としたsub関数
-void sub(Sparrow *p) {
-    p->voice();
 }
