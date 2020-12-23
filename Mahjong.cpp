@@ -36,3 +36,31 @@ Mahjong::Mahjong(int number, string result) {
     this->number = number;
     this->result = result;
 }
+
+// 雀士を表すクラスのコンストラクタの実装
+Sparrow::Sparrow(string name) {
+    this->name = name;
+}
+
+// 麻雀格闘倶楽部を表す名前と鳴き声を表示するメンバ関数の実装
+void MFC::voice() {
+    cout << "麻雀格闘倶楽部の" << this->name << "です。 すごーい" << endl;
+}
+
+// 麻雀格闘倶楽部を表すクラスのコンストラクタの実装
+MFC::MFC(string name) : Sparrow(name) {
+}
+
+// サクラナイツを表す名前と鳴き声を表示するメンバ関数の実装
+void Sakura::voice() {
+    cout << "サクラナイツの" << this->name << "です。 やったね" << endl;
+}
+
+// サクラナイツを表すクラスのコンストラクタの実装
+Sakura::Sakura(string name) : Sparrow(name) {
+}
+
+// Sparrowクラスのポインタを引数としたsub関数
+void sub(Sparrow *p) {
+    p->voice();
+}

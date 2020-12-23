@@ -18,18 +18,20 @@ class Sparrow {
     public:
         virtual void voice() = 0;   // 雀士の名前とボイスを表示するメンバ関数
         Sparrow(string name); // コンストラクタ
-}
+};
 
 // 麻雀格闘倶楽部を表すクラスの定義
 class MFC : public Sparrow {
     public:
         void voice();   // 雀士の名前とボイスを表示するメンバ関数
         MFC(string name); // コンストラクタ
-}
+};
 
 // サクラナイツを表すクラスの定義
 class Sakura : public Sparrow {
     public:
         void voice();   // 雀士の名前とボイスを表示するメンバ関数
         Sakura(string name); // コンストラクタ
-}
+};
+
+void sub(Sparrow *p);
