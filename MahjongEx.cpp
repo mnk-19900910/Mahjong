@@ -9,6 +9,7 @@ string MahjongEx::getVoice() {
     return this->voice;
 }
 
+// 翻数に応じてメッセージを設定するメンバ関数の実装
 string setVoice_func(int number) {
     string voice;
     if (number >= 13) {

@@ -14,6 +14,7 @@ int main() {
     result = setResult_func(number);
 
     string voice;	// メッセージを表す変数
+    // 翻数に応じたメッセージを取得
     voice = setVoice_func(number);
 
     // 新たなインスタンスを設定する
