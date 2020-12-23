@@ -10,7 +10,10 @@ class Mahjong {
         Mahjong(int number, string result); // コンストラクタ
 };
 
-// 満貫、跳満等の結果を設定するメンバ関数のプロトタイプ宣言
+// 翻数を設定する関数のプロトタイプ宣言
+int setNumber_func();
+
+// 満貫、跳満等の結果を設定する関数のプロトタイプ宣言
 string setResult_func(int number);
 
 // 雀士を表すSparrowクラスの定義

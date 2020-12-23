@@ -5,12 +5,10 @@ using namespace std;
 
 int main() {
     int number;	// 翻数を表す変数
-    cout << "翻数は?" << endl;
-    cin >> number;
+    number = setNumber_func();	// 翻数を設定する関数
 
     string result;	// 満貫、跳満等の結果を表す変数
-    // 満貫、跳満等の結果を取得
-    result = setResult_func(number);
+    result = setResult_func(number);	// 満貫、跳満等の結果を設定する関数
 
     int like;	// 好きな雀士を表す変数
     cout << "好きなのは? 1：高宮まり 2:岡田紗佳" << endl;

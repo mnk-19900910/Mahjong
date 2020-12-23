@@ -13,7 +13,15 @@ string Mahjong::getResult() {
     return this->result;
 }
 
-// 満貫、跳満等の結果を設定するメンバ関数の実装
+// 翻数を設定する関数の実装
+int setNumber_func() {
+    int number;
+    cout << "翻数は?" << endl;
+    cin >> number;
+    return number;
+}
+
+// 満貫、跳満等の結果を設定する関数の実装
 string setResult_func(int number) {
     string result;
     if (number >= 13) {
