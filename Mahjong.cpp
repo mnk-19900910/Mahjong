@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include "Mahjong.h"
+#include "header/Mahjong.h"
 
 // 翻数を返すメンバ関数の実装
 int Mahjong::getNumber() {

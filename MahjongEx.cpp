@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include "Mahjong.h"
-#include "MahjongEx.h"
+#include "header/Mahjong.h"
+#include "header/MahjongEx.h"
 
 // メッセージを返すメンバ関数の実装
 string MahjongEx::getVoice() {

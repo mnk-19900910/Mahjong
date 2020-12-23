@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#include "Mahjong.h"
+#include "header/Mahjong.h"
 
 int main() {
     int number;	// 翻数を表す変数
