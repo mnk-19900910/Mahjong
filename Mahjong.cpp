@@ -3,16 +3,6 @@
 using namespace std;
 #include "header/Mahjong.h"
 
-// 翻数を返すメンバ関数の実装
-int Mahjong::getNumber() {
-    return this->number;
-}
-
-// 満貫、跳満等の結果を返すメンバ関数の実装
-string Mahjong::getResult() {
-    return this->result;
-}
-
 // 翻数を設定する関数の実装
 int setNumber_func() {
     int number;
@@ -45,9 +35,23 @@ Mahjong::Mahjong(int number, string result) {
     this->result = result;
 }
 
+// 翻数を返すメンバ関数の実装
+int Mahjong::getNumber() {
+    return this->number;
+}
+
+// 満貫、跳満等の結果を返すメンバ関数の実装
+string Mahjong::getResult() {
+    return this->result;
+}
+
 // 雀士を表すクラスのコンストラクタの実装
 Sparrow::Sparrow(string name) {
     this->name = name;
+}
+
+// 麻雀格闘倶楽部を表すクラスのコンストラクタの実装
+MFC::MFC(string name) : Sparrow(name) {
 }
 
 // 麻雀格闘倶楽部を表す名前と鳴き声を表示するメンバ関数の実装
@@ -55,17 +59,13 @@ void MFC::voice() {
     cout << "麻雀格闘倶楽部の" << this->name << "です。 すごーい" << endl;
 }
 
-// 麻雀格闘倶楽部を表すクラスのコンストラクタの実装
-MFC::MFC(string name) : Sparrow(name) {
+// サクラナイツを表すクラスのコンストラクタの実装
+Sakura::Sakura(string name) : Sparrow(name) {
 }
 
 // サクラナイツを表す名前と鳴き声を表示するメンバ関数の実装
 void Sakura::voice() {
     cout << "サクラナイツの" << this->name << "です。 やったね" << endl;
-}
-
-// サクラナイツを表すクラスのコンストラクタの実装
-Sakura::Sakura(string name) : Sparrow(name) {
 }
 
 // Sparrowクラスのポインタを引数としたsub関数
