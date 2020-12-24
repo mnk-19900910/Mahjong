@@ -9,3 +9,7 @@
     1.4. mainの機能を関数化<br>
    &emsp;&emsp;`setNumber_func()`, `setResult_func()`, `setLike_func()`, `getVoice_func()`<br>
 ***
+#### 12/24
+1. 追加内容<br>
+    1.1. コンストラクタをデフォルト引数に対応(インスタンス生成の際、引数なしに対応)<br>
+***
