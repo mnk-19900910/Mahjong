@@ -7,7 +7,7 @@ class Mahjong {
         int getNumber();    // 翻数を返すメンバ関数
         string getResult();   // 満貫、跳満等の結果を返すメンバ関数
         void setNumber(int number);   // 翻数を設定するメンバ関数
-        Mahjong(int number, string result); // コンストラクタ
+        Mahjong(int number = 99, string result = "四暗刻"); // コンストラクタ(デフォルト引数に対応)
 };
 
 // 翻数を設定する関数のプロトタイプ宣言
