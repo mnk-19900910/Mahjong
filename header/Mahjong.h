@@ -19,6 +19,9 @@ string setResult_func(int number);
 // 好きな雀士を設定する関数のプロトタイプ宣言
 int setLike_func();
 
+// ファイルに翻数と結果を出力する関数のプロトタイプ宣言
+void fileOut_func(Mahjong act, int like) ;
+
 // 雀士のインスタンスを作成し、ボイスを表示する関数のプロトタイプ宣言
 void getVoice_func(int like);
 

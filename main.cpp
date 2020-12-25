@@ -16,6 +16,9 @@ int main() {
     // 新たな翻数と結果を表示するインスタンスを設定する
     Mahjong act (number, result);
 
+    // ファイルに翻数と結果を出力する関数
+    fileOut_func(act, like);
+
     // 翻数と結果、ボイスを表示する
     cout << "翻数は" << act.getNumber() << endl;
     cout << "結果は" << act.getResult() << endl;

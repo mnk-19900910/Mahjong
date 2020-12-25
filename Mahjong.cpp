@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 #include "header/Mahjong.h"
 
@@ -35,6 +36,20 @@ int setLike_func() {
     cout << "好きなのは? 1：高宮まり 2:岡田紗佳" << endl;
     cin >> like;
     return like;
+}
+
+// ファイルに翻数と結果を出力する関数の実装
+void fileOut_func(Mahjong act, int like) {
+    ofstream fout("myFile.txt");
+
+    if (!fout.is_open()) {
+        cout << "ファイルをオープンできません";
+    }
+
+    fout << "翻数は" << act.getNumber() << endl;
+    fout << "結果は" << act.getResult() << endl;
+
+    fout.close();
 }
 
 // 雀士のインスタンスを作成し、ボイスを表示する関数の実装
