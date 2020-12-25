@@ -40,7 +40,7 @@ int setLike_func() {
 
 // ファイルに翻数と結果を出力する関数の実装
 void fileOut_func(Mahjong act, int like) {
-    ofstream fout("myFile.txt");
+    ofstream fout("./txt/myFile.txt");
 
     if (!fout.is_open()) {
         cout << "ファイルをオープンできません";
