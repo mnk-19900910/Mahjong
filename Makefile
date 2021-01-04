@@ -1,5 +1,5 @@
 CPP = g++
-TARGET = Main
+TARGET = Mahjong
 1: Mahjong.o main.o
 	$(CPP) -o $(TARGET) Mahjong.o main.o
 Mahjong: Mahjong.cpp
